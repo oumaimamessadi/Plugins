@@ -2,7 +2,9 @@
 /*
 Plugin Name: Stratis Plugin
 Plugin URI: http://example.com
-Description: Plugin for handling Stratis Post functionality.
+Description: This plugin handles Stratis Post functionality. Use the shortcode "[stratis_post submit_button_text='Envoyer']" inside an article.
+The attribute "submit_button_text='Envoyer'" defines the submit text. In case of the default "[stratis_post]",
+the submit text will be "submit".
 Version: 1.0.0
 Author: OUMAIMA MESSADI
 Author URI: http://example.com

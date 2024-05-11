@@ -45,10 +45,11 @@ if ( ! class_exists( 'StratisPost_Form_Handler' ) ) :
 
                                 // Envoyer un e-mail à l'administrateur
                                 $admin_email = get_option( 'admin_email' );
+                                $user_email = wp_get_current_user()->user_email;
                                 $subject = 'New post created';
                                 $message = "A new post titled '$post_title' has been created on the site.";
                                 $headers = array('Content-Type: text/html; charset=UTF-8');
-                                $headers[] .= 'From:' . "testing@gmail.com";
+                                $headers[] .= 'From:' . $user_email;
 
                                 $sent = wp_mail( $admin_email, $subject, $message, $headers );
 
