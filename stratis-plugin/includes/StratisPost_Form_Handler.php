@@ -50,7 +50,7 @@ if ( ! class_exists( 'StratisPost_Form_Handler' ) ) :
                                 $headers = array('Content-Type: text/html; charset=UTF-8');
                                 $headers[] .= 'From:' . "testing@gmail.com";
 
-                                $sent = wp_mail( 'graujoppegreubo-2139@yopmail.com', $subject, $message, $headers );
+                                $sent = wp_mail( $admin_email, $subject, $message, $headers );
 
                                 // Afficher un message de succès
                                 echo '<div class="alert alert-success stratis__plugin" role="alert">' . esc_html__('Post created successfully!', 'stratis-plugin') . '</div>';
