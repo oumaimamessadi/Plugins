@@ -1,0 +1,28 @@
+/*
+Stratic Plugin Main Style
+ */
+
+/* Styles spécifiques au formulaire */
+.form-group {
+    margin-bottom: 20px;
+}
+
+/* Styles spécifiques au bouton de soumission */
+.btn-primary {
+    background-color: #007bff;
+    border-color: #007bff;
+}
+
+.btn-primary:hover {
+    background-color: #0056b3;
+    border-color: #0056b3;
+}
+.alert.alert-danger.stratis__plugin,
+.alert.alert-success.stratis__plugin {
+    margin-top: 15px !important;
+    font-size: 15px;
+}
+
+.stratis__plugin{
+    font-size: 15px;
+}
